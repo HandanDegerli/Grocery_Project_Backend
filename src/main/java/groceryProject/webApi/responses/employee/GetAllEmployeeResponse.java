@@ -1,0 +1,31 @@
+package groceryProject.webApi.responses.employee;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+public class GetAllEmployeeResponse {
+
+    private int id;
+
+    private String email;
+
+    private String password;
+
+    private String firstName; // challenge= full name yapıp ikisini de almaya çalış...
+
+    private String lastName;
+
+    private String nationalIdentity;
+
+    private LocalDate birthDate;
+
+    private double salary;
+}
